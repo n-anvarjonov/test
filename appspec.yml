@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/devops/
+permissions:
+  - object: /var/devops/
+    owner: root
+    group: root
+# hooks:
+#   ApplicationStop:
+#   - location: WEB-INF/classes/DeploymentScripts/Stop.sh
+#     runas: root
+#     timeout: 120
